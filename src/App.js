@@ -23,7 +23,7 @@ class App extends Component {
           <h2>Using JSONPLACEHOLDER API</h2>
           <marquee>Thanks TO Sir Osama, Sir Umair, Sir Faraz, Sir Irfan</marquee>
           {posts.map((item) => {
-            return <h3>UserId:&nbsp;&nbsp;{item.userId} <br /> Id:&nbsp;&nbsp;{item.id} <br /> Title:&nbsp;&nbsp;{item.title} <br /> Completed:&nbsp;&nbsp;{item.completed}</h3>
+            return <h3>UserId:&nbsp;&nbsp;{item.userId} <br /> Id:&nbsp;&nbsp;{item.id} <br /> Title:&nbsp;&nbsp;{item.title} <br /> Completed:&nbsp;&nbsp;{item.completed.toString()}</h3>
           })}
       </div>
     );
