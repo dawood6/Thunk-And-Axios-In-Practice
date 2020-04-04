@@ -2,23 +2,23 @@ import ActionTypes from './ActionTypes';
 
 class AuthActions {
 
-  static postsLoading = () => {
+  static todosLoading = () => {
     return {
-      type: ActionTypes.POSTS_LOADING
+      type: ActionTypes.TODOS_LOADING
     }
   }
 
-  static postsLoadingSuccess = (data) => {
+  static todosLoadingSuccess = (data) => {
     return {
-      type: ActionTypes.POSTS_LOADING_SUCCESS,
+      type: ActionTypes.TODOS_LOADING_SUCCESS,
       data
     }
   }
 
 
-  static postsLoadingFail = (data) => {
+  static todosLoadingFail = (data) => {
     return {
-      type: ActionTypes.POSTS_LOADING_FAIL,
+      type: ActionTypes.TODOS_LOADING_FAIL,
       data
     }
   }

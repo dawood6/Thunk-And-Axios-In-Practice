@@ -1,26 +1,26 @@
 import ActionTypes from '../actions/ActionTypes';
 
 const initialAuthState = {
-  posts: [],
+  todos: [],
   errorMessage: '',
   loading: false,
 };
-console.log(initialAuthState.posts)
+console.log(initialAuthState.todos)
 export const authReducer = (state = initialAuthState, action) => {
   switch (action.type) {
-    case ActionTypes.USER_LOGIN:
+    case ActionTypes.TODOS_LOGIN:
       return {
         ...state,
         loading: true
       };
-      case ActionTypes.POSTS_LOADING_SUCCESS:
+      case ActionTypes.TODOS_LOADING_SUCCESS:
         return {
           ...state,
-          posts: action.data
+          todos: action.data
         };
 
-    case ActionTypes.USER_LOGIN_FAIL:   
-      return {...state, posts: null, errorMessage: action.data.errorMessage}
+    case ActionTypes.TODOS_LOGIN_FAIL:   
+      return {...state, todos: null, errorMessage: action.data.errorMessage}
 
     default:
       return state;

@@ -5,31 +5,31 @@
 }
 h1 {
     text-align: center;
-    color: dodgerblue;
+    color: yellow;
 }
 h1:hover {
-    color: darkblue;
+    color: orange;
 }
 h2 {
     text-align: center;
-    color: darkblue;
+    color: orange;
 }
 h2:hover {
-    color: dodgerblue;
+    color: yellow;
 }
 marquee {
-    color: rgb(216, 16, 216);
+    color: rgb(0, 255, 149);
     font-size: 15px;
     font-weight: 200;
 }
 marquee:hover {
-    color: white;
+    color: rgb(255, 0, 0);
     font-size: 23px;
 }
 h3 {
     text-align: center;
-    color: lime;
+    color: rgb(0, 255, 234);
 }
 h3:hover {
-    color: purple;
+    color: rgb(204, 114, 204);
 }

@@ -3,16 +3,16 @@ import axios from 'axios'
 
 const SERVER_PATH = 'https://jsonplaceholder.typicode.com/todos'
 class AuthMiddleware  {
-  static postLoadingMiddleware = (data) => {
+  static todosLoadingMiddleware = (data) => {
     return (dispatch) => {
-      dispatch(AuthActions.postsLoading())
+      dispatch(AuthActions.todosLoading())
       axios.get(SERVER_PATH).then(response => {
         console.log(response.data)
-        dispatch(AuthActions.postsLoadingSuccess(response.data))
+        dispatch(AuthActions.todosLoadingSuccess(response.data))
 
       }).catch(err => {
         console.log(err)
-        dispatch(AuthActions.postsLoadingFail({ success: false, errorMessage: err.message }))
+        dispatch(AuthActions.todosLoadingFail({ success: false, errorMessage: err.message }))
 
       })
     }
