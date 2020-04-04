@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=PT+Mono&display=swap');
+* {
+    font-family: 'PT Mono';
+    background-color: black;
+}
+h1 {
+    text-align: center;
+    color: dodgerblue;
+}
+h1:hover {
+    color: darkblue;
+}
+h2 {
+    text-align: center;
+    color: darkblue;
+}
+h2:hover {
+    color: dodgerblue;
+}
+marquee {
+    color: rgb(216, 16, 216);
+    font-size: 15px;
+    font-weight: 200;
+}
+marquee:hover {
+    color: white;
+    font-size: 23px;
+}
+h3 {
+    text-align: center;
+    color: lime;
+}
+h3:hover {
+    color: purple;
+}
